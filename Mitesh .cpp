@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+class Book
+{
+public:
+    string name;
+    string author;
+    int id;
+
+    // Default Constructor
+    Book()
+    {
+        name = "Unknown";
+        author = "Unknown";
+        id = 0;
+    }
+
+    // Parameterized Constructor
+    Book(string n, string a, int i)
+    {
+        name = n;
+        author = a;
+        id = i;
+    }
+
+    void display()
+    {
+        cout << "\nBook Name: " << name << endl;
+        cout << "Author: " << author << endl;
+        cout << "Book ID: " << id << endl;
+    }
+};
+
+int main()
+{
+    Book b1;
+    Book b2("C++ Programming", "Bjarne", 101);
+
+    cout << "Book 1:";
+    b1.display();
+
+    cout << "\nBook 2:";
+    b2.display();
+
+    return 0;
+}
