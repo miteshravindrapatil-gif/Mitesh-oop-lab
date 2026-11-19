@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+template <class T>
+T findLarger(T a, T b)
+{
+    if (a > b)
+        return a;
+    else
+        return b;
+}
+
+int main()
+{
+    cout << "Higher Marks: " << findLarger(85, 90) << endl;
+
+    cout << "Higher Product Price: " << findLarger(250.50, 300.75) << endl;
+
+    cout << "Higher Sensor Reading: " << findLarger(35.5, 42.8) << endl;
+
+    return 0;
+}
