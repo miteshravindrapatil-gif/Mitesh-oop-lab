@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+template <class T>
+void swapValues(T &a, T &b)
+{
+    T temp = a;
+    a = b;
+    b = temp;
+}
+
+int main()
+{
+    int employeeID1 = 101, employeeID2 = 102;
+    swapValues(employeeID1, employeeID2);
+
+    cout << "Employee IDs: " << employeeID1
+         << " " << employeeID2 << endl;
+
+    int roomNo1 = 201, roomNo2 = 202;
+    swapValues(roomNo1, roomNo2);
+
+    cout << "Room Numbers: " << roomNo1
+         << " " << roomNo2 << endl;
+
+    int priority1 = 1, priority2 = 3;
+    swapValues(priority1, priority2);
+
+    cout << "Task Priorities: " << priority1
+         << " " << priority2 << endl;
+
+    return 0;
+}
